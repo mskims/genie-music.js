@@ -4,7 +4,7 @@ import {
   TrackController
 } from './controllers/index'
 
-export class GenieMusic extends EventEmitter {
+export default class GenieMusic extends EventEmitter {
   constructor () {
     super()
     this.controllers = [
