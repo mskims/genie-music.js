@@ -1,17 +1,29 @@
 {
-  "name": "genieMusic",
+  "name": "genie.js",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Javascript library for controlling genie.co.kr/player/fPlayer",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src -d dist"
+    "test": "standard",
+    "build": "babel src -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Minseok Kim",
+    "email": "its@mskim.me"
+  },
+  "keywords": [
+    "genie.co.kr",
+    "genie music",
+    "music player"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mskims/genie.js.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "standard": "^11.0.1"
   }
 }
