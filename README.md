@@ -1,7 +1,7 @@
 # genie-music
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-[![npm](https://img.shields.io/npm/v/mskims/genie-music.svg)](https://www.npmjs.com/package/mskims/genie-music)
+[![npm](https://img.shields.io/npm/v/genie-music.svg)](https://www.npmjs.com/package/genie-music)
 [![Build Status](https://travis-ci.org/mskims/genie-music.svg?branch=master)](https://travis-ci.org/mskims/genie-music)
 [![Greenkeeper badge](https://badges.greenkeeper.io/mskims/genie-music.svg)](https://greenkeeper.io/)
 
