@@ -9,7 +9,7 @@ export default class GenieMusic extends Emitter {
     super()
     const controllers = {
       'playback': PlayBackController,
-      'track': TrackController,
+      'track': TrackController
     }
 
     for (let [name, ControllerClass] of Object.entries(controllers)) {
