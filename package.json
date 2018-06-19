@@ -1,6 +1,6 @@
 {
   "name": "genie-music",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Javascript library for controlling genie.co.kr/player/fPlayer",
   "main": "dist/index.js",
   "scripts": {

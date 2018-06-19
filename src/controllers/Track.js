@@ -1,4 +1,4 @@
-import {PlayerController} from './Base'
+import { PlayerController } from './Base'
 
 export class Track {
   constructor ({id, title, artist, album, albumArt, durationInMs}) {
@@ -14,7 +14,7 @@ export class TrackController extends PlayerController {
   setHook () {
     new window.MutationObserver(() => {
       const currentTrack = this.getCurrentTrack()
-      this.mainEmitter.emit('track:changed', currentTrack)
+      this.mainEmitter.emit('track-changed', currentTrack)
     }).observe(document.querySelector('.fp-duration'), {
       childList: true
     })

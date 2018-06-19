@@ -1,4 +1,4 @@
-import {click} from '../utils'
+import { click } from '../utils'
 
 export class PlayerController {
   constructor (mainEmitter) {
@@ -7,10 +7,6 @@ export class PlayerController {
   }
 
   setHook () {
-
-  }
-
-  setEvent () {
 
   }
 

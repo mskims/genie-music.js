@@ -1,30 +1,19 @@
-import EventEmitter from 'events'
+import Emitter from 'events'
 import {
   PlayBackController,
   TrackController
 } from './controllers/index'
 
-export default class GenieMusic extends EventEmitter {
+export default class GenieMusic extends Emitter {
   constructor () {
     super()
-    this.controllers = [
-      PlayBackController,
-      TrackController
-    ].map((ControllerClass) => new ControllerClass(this))
+    const controllers = {
+      'playback': PlayBackController,
+      'track': TrackController,
+    }
 
-    this._setHooks()
-    this._setEvents()
-  }
-
-  _setHooks () {
-    this.controllers.forEach(controller => {
-      controller.setHook()
-    })
-  }
-
-  _setEvents () {
-    this.controllers.forEach(controller => {
-      controller.setEvent()
-    })
+    for (let [name, ControllerClass] of Object.entries(controllers)) {
+      this[name] = new ControllerClass(this)
+    }
   }
 }

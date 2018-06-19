@@ -6,21 +6,24 @@
 
 브라우저 레벨의 지니 플레이어 컨트롤을 위한 자바스크립트 라이브러리.
 
-# 개발
+# Development
 ```bash
 $ npm i
 $ npm run build 
 ```
 
-# 예
+# Usage
 ```javascript
 import GenieMusic from 'genie-music'
 
 const genie = new GenieMusic()
-genie.onAny((event, value) => {
-    console.log(`'${event}' Triggered: ${value}`)
+genie.on('track-changed', (track) => {
+    console.log(`Current track has changed to: ${track}`)
 })
 ```
 
-# 라이센스
+# API
+TBA
+
+# License
 MIT
