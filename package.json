@@ -29,6 +29,6 @@
     "babel-plugin-add-module-exports": "^0.3.0",
     "babel-preset-env": "^1.6.1",
     "pre-commit": "^1.2.2",
-    "standard": "^12.0.0"
+    "standard": "^14.2.0"
   }
 }
